@@ -1,8 +1,6 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
-import os
-os.chdir(r"E:\Study\Course Docs\Upgrad\GitHub Submissions\Heroku-Demo-master")
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
